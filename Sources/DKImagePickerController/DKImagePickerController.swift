@@ -320,7 +320,7 @@ open class DKImagePickerController: UINavigationController, DKImageBaseManagerOb
         if self.inline {
             exportBlock()
         } else {
-            exportBlock()
+//            exportBlock()
         }
     }
     

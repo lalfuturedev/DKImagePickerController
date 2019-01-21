@@ -307,6 +307,7 @@ open class DKImagePickerController: UINavigationController, DKImageBaseManagerOb
                         if strongSelf.exportRequestID == requestID {
                             strongSelf.exportRequestID = DKImageAssetExportInvalidRequestID
                             completeBlock(assets)
+                            print("CompleteBlock")
                         }
                     }
                 }

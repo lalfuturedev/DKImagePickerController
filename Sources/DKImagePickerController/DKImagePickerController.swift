@@ -290,7 +290,7 @@ open class DKImagePickerController: UINavigationController, DKImageBaseManagerOb
             print("CompleteBlock")
             print("Completed")
             print("COOOO")
-//            self.presentingViewController?.dismiss(animated: true, completion: {
+            self.presentingViewController?.dismiss(animated: true, completion: {
                 self.exportStatus = .none
                 
                 self.didSelectAssets?(assets)
@@ -298,7 +298,7 @@ open class DKImagePickerController: UINavigationController, DKImageBaseManagerOb
                 if self.sourceType == .camera {
                     self.needShowInlineCamera = true
                 }
-//            })
+            })
         }
         
         let exportBlock = {

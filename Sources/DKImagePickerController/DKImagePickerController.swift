@@ -287,7 +287,7 @@ open class DKImagePickerController: UINavigationController, DKImageBaseManagerOb
         self.cancelCurrentExportRequestIfNeeded()
         
         let completeBlock: ([DKAsset]) -> Void = { assets in
-            self.presentingViewController?.dismiss(animated: true, completion: {
+//            self.presentingViewController?.dismiss(animated: true, completion: {
                 self.exportStatus = .none
                 
                 self.didSelectAssets?(assets)
@@ -295,7 +295,7 @@ open class DKImagePickerController: UINavigationController, DKImageBaseManagerOb
                 if self.sourceType == .camera {
                     self.needShowInlineCamera = true
                 }
-            })
+//            })
         }
         
         let exportBlock = {

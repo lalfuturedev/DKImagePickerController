@@ -287,9 +287,7 @@ open class DKImagePickerController: UINavigationController, DKImageBaseManagerOb
         self.cancelCurrentExportRequestIfNeeded()
         
         let completeBlock: ([DKAsset]) -> Void = { assets in
-            print("CompleteBlock")
             print("Completed")
-            print("COOOO")
             self.presentingViewController?.dismiss(animated: true, completion: {
                 self.exportStatus = .none
                 
@@ -310,7 +308,6 @@ open class DKImagePickerController: UINavigationController, DKImageBaseManagerOb
                         if strongSelf.exportRequestID == requestID {
                             strongSelf.exportRequestID = DKImageAssetExportInvalidRequestID
                             completeBlock(assets)
-                            print("CompleteBlock")
                         }
                     }
                 }

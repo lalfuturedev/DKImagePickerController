@@ -287,6 +287,7 @@ open class DKImagePickerController: UINavigationController, DKImageBaseManagerOb
         self.cancelCurrentExportRequestIfNeeded()
         
         let completeBlock: ([DKAsset]) -> Void = { assets in
+            print("CompleteBlock")
 //            self.presentingViewController?.dismiss(animated: true, completion: {
                 self.exportStatus = .none
                 

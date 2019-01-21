@@ -288,6 +288,7 @@ open class DKImagePickerController: UINavigationController, DKImageBaseManagerOb
         
         let completeBlock: ([DKAsset]) -> Void = { assets in
             print("CompleteBlock")
+            print("Completed")
 //            self.presentingViewController?.dismiss(animated: true, completion: {
                 self.exportStatus = .none
                 
